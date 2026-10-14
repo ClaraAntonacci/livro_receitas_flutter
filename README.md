@@ -1,68 +1,56 @@
-
 # Sabor & Afeto — Livro de Receitas
 
-Aplicativo mobile desenvolvido em Flutter para consultar, cadastrar, editar e excluir receitas culinárias, consumindo uma API própria disponibilizada na nuvem.
-
-O aplicativo permite organizar receitas em um só lugar, visualizar seus ingredientes e modos de preparo e consultar o custo aproximado de cada prato.
-
-## Telas do aplicativo
-
-### 1. Splash Screen
-
-Tela inicial do aplicativo, com animação de abertura e a identidade visual do Sabor & Afeto.
-
-![Splash Screen](assets/splash.png)
-
-### 2. Início
-
-Tela principal com a lista de receitas cadastradas, campo de pesquisa por nome ou ingrediente, imagens, tipo da receita e custo aproximado.
-
-![Tela inicial](assets/inicio.png)
-
-### 3. Nova Receita
-
-Formulário para cadastrar receitas, informando nome, tipo, ingredientes, modo de preparo, URL da imagem e custo aproximado.
-
-![Nova receita](assets/nova_receita.png)
+Aplicativo mobile desenvolvido em Flutter para consultar, cadastrar, editar e excluir receitas por meio de uma API REST.
 
 ## Funcionalidades
 
-- Consultar receitas cadastradas na API.
-- Pesquisar receitas pelo nome ou pelos ingredientes.
-- Visualizar os detalhes de cada receita.
-- Cadastrar novas receitas.
-- Editar receitas existentes.
-- Excluir receitas.
-- Atualizar a lista de receitas.
-- Utilizar navegação inferior entre Splash, Início e Nova Receita.
-- Utilizar temas claro e escuro conforme a configuração do sistema.
-- Exibir uma tela de abertura com animação.
+- Splash Screen com animação.
+- Tela inicial com listagem de receitas.
+- Cadastro de novas receitas.
+- Edição de receitas existentes.
+- Exclusão de receitas.
+- Navegação inferior com as opções Splash, Início e Nova.
+- Tema claro e escuro.
+- Integração com API REST para gerenciamento das receitas.
 
 ## Tecnologias utilizadas
 
 - Flutter
 - Dart
-- HTTP
 - API REST
-- intl
-- shared_preferences
+- HTTP
+- Material Design
 
 ## API utilizada
 
-API de receitas disponibilizada para a atividade do SENAI.
+O aplicativo utiliza a API de receitas disponível em:
 
-- [Acessar a API](https://receitasapi-b-2025.vercel.app/)
-- [Repositório da API](https://github.com/wellifabio/receitasapp-expo-2025.git)
-- [Front-end de referência](https://wellifabio.github.io/receitas-web-2025/)
+https://receitasapi-b-2025.vercel.app
+
+## Capturas de tela
+
+### Splash Screen
+
+![Splash Screen](assets/splash.png)
+
+### Tela inicial
+
+![Tela inicial](assets/inicio.png)
+
+### Cadastro de receita
+
+![Cadastro de receita](assets/nova_receita.png)
+
+> As imagens devem estar salvas na pasta `assets` com os nomes utilizados acima.
 
 ## Como executar o projeto
 
 ### Pré-requisitos
 
-- Flutter instalado e configurado.
-- Dart instalado com o Flutter.
-- Android Studio ou Visual Studio Code.
-- Acesso à internet.
+- Flutter instalado.
+- Dart instalado.
+- Visual Studio Code ou outra IDE compatível.
+- Conexão com a internet para acessar a API.
 
 ### Instalação
 
@@ -70,36 +58,3 @@ API de receitas disponibilizada para a atividade do SENAI.
 
    ```bash
    git clone URL_DO_SEU_REPOSITORIO
-   ```
-
-2. Entre na pasta do projeto:
-
-   ```bash
-   cd livro_receitas_flutter
-   ```
-
-3. Instale as dependências:
-
-   ```bash
-   flutter pub get
-   ```
-
-4. Execute o aplicativo:
-
-   ```bash
-   flutter run
-   ```
-
-## APK
-
-O APK de instalação do aplicativo está disponível na pasta `assets` do repositório.
-
-Arquivo: `assets/livro_receitas.apk`
-
-## Desenvolvimento
-
-Projeto desenvolvido como atividade acadêmica do curso técnico de Desenvolvimento de Sistemas do SENAI, com o objetivo de praticar o desenvolvimento mobile em Flutter e o consumo de uma API back-end própria.
-
----
-
-**Sabor & Afeto — Feito em casa, feito com carinho.**
